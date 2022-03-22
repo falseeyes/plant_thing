@@ -1,0 +1,33 @@
+menu "Plant Thing Configuration"
+
+    config MQTT_BROKER_URL
+        string "MQTT Broker URL"
+        default "mqtt://mqtt.eclipse.org"
+        help
+            URL of the MQTT broker to connect to
+
+    config MQTT_USERNAME
+        string "MQTT Username"
+        default "mqtt_user"
+        help
+            MQTT username
+
+    config MQTT_PASSWORD
+        string "MQTT Password"
+        default "mqtt_pass"
+        help
+            MQTT password
+
+    config WIFI_SSID 
+        string "Wifi SSID"
+        default "ssid"
+        help
+            SSID of the WIFI AP to connect to
+
+    config WIFI_PASSWORD
+        string "Wifi Password"
+        default "password"
+        help
+            WIFI Password
+
+endmenu
